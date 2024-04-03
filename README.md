@@ -185,13 +185,13 @@ SOAL
 <br>
 
 ### Penjelasan :
--Variabel Konfigurasi :
+- Variabel Konfigurasi :
         SERVER_HOST: Alamat IP server yang akan dikoneksikan oleh klien. Dalam contoh ini, diatur ke '127.0.0.1', yang merupakan localhost.
         SERVER_PORT: Port yang digunakan oleh server untuk menerima koneksi dari klien. Dalam contoh ini, diatur ke 12345.
         BUFFER_SIZE: Ukuran buffer untuk mengirim dan menerima data antara klien dan server.
 <br>
 
--Fungsi main :
+- Fungsi main :
         Fungsi utama program yang akan dieksekusi saat menjalankan program.
         Mencetak pesan selamat datang dan daftar perintah yang dapat digunakan oleh pengguna.
         Membuat socket klien menggunakan socket.socket() dengan alamat IPv4 dan jenis socket TCP (socket.AF_INET dan socket.SOCK_STREAM).
@@ -199,19 +199,19 @@ SOAL
 
 <br>
 
--Loop Utama :
+- Loop Utama :
         Program masuk ke dalam loop utama yang berjalan selama koneksi dengan server aktif.
         Pengguna diminta untuk memasukkan perintah menggunakan input().
         Perintah yang dimasukkan oleh pengguna dikirimkan ke server menggunakan client_socket.send(command.encode()).
 
 <br>
 
--Penanganan Perintah "byebye" :
+- Penanganan Perintah "byebye" :
         Jika pengguna memasukkan perintah "byebye", klien mengirimkan perintah ke server dan mencetak pesan sebelum memutus koneksi.
         Klien menerima respons dari server dan mencetak pesan penutupan sebelum keluar dari loop dan menutup koneksi dengan server.
 <br>
 
--Menerima Respons dari Server:
+- Menerima Respons dari Server:
         Setelah mengirim perintah ke server, klien menerima respons dari server menggunakan client_socket.recv(BUFFER_SIZE).
         Data yang diterima kemudian didekode dari byte menjadi string menggunakan .decode() untuk membaca pesan respons dari server.
         Jika respons adalah "Command not found", klien mencetak pesan kesalahan.
