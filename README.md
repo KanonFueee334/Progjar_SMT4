@@ -1,1 +1,1 @@
-# Progjar_SMT4
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bebas+Neue&weight=500&size=24&duration=7500&pause=500&color=8AE1F7&center=true&random=false&width=435&lines=Welcome+!!;Kanon's+GitHub+Repository;%F0%9F%94%A5+FTP+Socket+Programming+%F0%9F%94%A5" alt="Typing SVG" /></a>
