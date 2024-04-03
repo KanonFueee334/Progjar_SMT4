@@ -243,5 +243,52 @@ SOAL
 - Fungsionalitas dasar kedua program diatas adalah untuk berkomunikasi antara klien dan server melalui protokol FTP menggunakan socket. program diatas memberikan pengguna           antarmuka sederhana untuk melakukan operasi dasar pada file di server, seperti melihat daftar file, mengunduh, mengunggah, menghapus, dan menghitung ukuran file.
 <br>
 
+### COMMAND LIST :
+
+**1. Ls**
+```
+Enter Command : ls
+```
+
+Perintah `ls` digunakan untuk mengetahui folder dan file yang ada di direktori
+
+
+**2. Size**
+```
+Enter Command : size <nama_file>
+```
+
+Perintah `size` digunakan untuk mengetahui ukuran file yang diinginkan dengan menambahkan parameter nama file.
+
+
+**3. Upload**
+```
+Enter Command : upload <nama_file>
+```
+
+Perintah `upload` digunakan untuk mengunggah file yang diinginkan `client` dengan menambahkan nama file, misalnya `DreamAI.py`. File yang diunggah ini akan diterima dan disimpan oleh `server` ke direktori server.
+
+**4. Download**
+```
+Enter Command : download <nama_file>
+```
+
+Perintah `download` digunakan untuk mengunduh file yang diinginkan `client` dengan menambahkan nama file, misalnya `DreamAI.py`. File yang diunduh ini akan berada di `client` dan `client` akan menampilkannya.
+
+**5. Rm**
+```
+Enter Command : rm <nama_file>
+```
+
+Perintah `rm` digunakan untuk menghapus file yang diinginkan `client`.
+
+**6. Byebye**
+```
+Enter Command : byebye
+```
+
+Perintah `byebye` digunakan untuk memutuskan koneksi antara `client` dengan `server`. 
+<hr>
+
 
 
