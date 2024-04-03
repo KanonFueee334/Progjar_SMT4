@@ -218,6 +218,25 @@ SOAL
         Jika respons adalah respons dari perintah yang dijalankan, klien mencetak respons tersebut.
 <br>
 
+### Cara Kerja Program :
+
+- Server Program:
+        Program server membuat sebuah socket dan mulai mendengarkan koneksi masuk.
+        Ketika koneksi diterima dari klien, server menerima perintah dari klien.
+        Server memproses perintah tersebut dan memberikan respons yang sesuai kepada klien.
+        Koneksi antara klien dan server tetap terbuka sampai klien mengirimkan perintah "byebye" untuk menutup koneksi.
+
+<br>
+
+- Klien Program:
+        Program klien membuat sebuah socket dan terhubung ke alamat dan port yang telah ditentukan oleh server.
+        Pengguna diminta untuk memasukkan perintah dari daftar perintah yang tersedia.
+        Klien mengirimkan perintah yang dimasukkan oleh pengguna ke server melalui socket.
+        Klien menerima respons dari server dan mencetaknya.
+        Loop ini berlanjut sampai pengguna memasukkan perintah "byebye" untuk keluar dari program.
+
+<br>
+
 
 
 
