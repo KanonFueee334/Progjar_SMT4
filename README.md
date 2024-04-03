@@ -6,7 +6,7 @@ Kelas : IF-02-01
 ```
 
 <hr>
-Soal : 
+## Soal : 
 
 Buat sebuah program file transfer protocol menggunakan socket programming dengan beberapa perintah dari client seperti berikut.
 
@@ -20,3 +20,5 @@ Buat sebuah program file transfer protocol menggunakan socket programming dengan
 
 <br>
 <hr>
+
+
