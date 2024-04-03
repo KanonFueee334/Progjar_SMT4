@@ -140,5 +140,84 @@ SOAL
   Ketika koneksi diterima, server memanggil handle_client untuk menangani koneksi dari klien tersebut. Setelah selesai, server kembali ke tahap mendengarkan koneksi masuk.
 <br>
 
+### Code Program : Client
+    import socket
+    import sys
+
+    SERVER_HOST = '127.0.0.1'
+    SERVER_PORT = 12345
+    BUFFER_SIZE = 1024
+
+    def main():
+    print("\n------------------------------------")
+    print("Python FTP Socket Programming")
+    print("-------------------------------------")
+    print("Choose Command:")
+    print("ls                    : List of files")
+    print("size <file_path>      : file sizes")
+    print("upload <file_path>    : Upload files")
+    print("download <file_path>  : Download files")
+    print("rm <file_path>        : Remove files")
+    print("byebye                : Disconnect.")
+    print("-------------------------------------")
+
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
+        client_socket.connect((SERVER_HOST, SERVER_PORT))
+        print(f"[*] Connected to server {SERVER_HOST}:{SERVER_PORT}")
+
+        while True:
+            command = input("\nEnter Command : ").strip()
+            client_socket.send(command.encode())
+
+            if command == 'byebye':
+                print("[*] Disconnecting from server...")
+                print(client_socket.recv(BUFFER_SIZE).decode())
+                break
+
+            data = client_socket.recv(BUFFER_SIZE).decode()
+            if data == "Command not found":
+                print("[!] Command not found. Please enter a valid command.")
+            else:
+                print(data)
+
+    if __name__ == "__main__":
+    main()
+<br>
+
+### Penjelasan :
+-Variabel Konfigurasi :
+        SERVER_HOST: Alamat IP server yang akan dikoneksikan oleh klien. Dalam contoh ini, diatur ke '127.0.0.1', yang merupakan localhost.
+        SERVER_PORT: Port yang digunakan oleh server untuk menerima koneksi dari klien. Dalam contoh ini, diatur ke 12345.
+        BUFFER_SIZE: Ukuran buffer untuk mengirim dan menerima data antara klien dan server.
+<br>
+
+-Fungsi main :
+        Fungsi utama program yang akan dieksekusi saat menjalankan program.
+        Mencetak pesan selamat datang dan daftar perintah yang dapat digunakan oleh pengguna.
+        Membuat socket klien menggunakan socket.socket() dengan alamat IPv4 dan jenis socket TCP (socket.AF_INET dan socket.SOCK_STREAM).
+        Menghubungkan klien ke server menggunakan client_socket.connect((SERVER_HOST, SERVER_PORT)).
+
+<br>
+
+-Loop Utama :
+        Program masuk ke dalam loop utama yang berjalan selama koneksi dengan server aktif.
+        Pengguna diminta untuk memasukkan perintah menggunakan input().
+        Perintah yang dimasukkan oleh pengguna dikirimkan ke server menggunakan client_socket.send(command.encode()).
+
+<br>
+
+-Penanganan Perintah "byebye" :
+        Jika pengguna memasukkan perintah "byebye", klien mengirimkan perintah ke server dan mencetak pesan sebelum memutus koneksi.
+        Klien menerima respons dari server dan mencetak pesan penutupan sebelum keluar dari loop dan menutup koneksi dengan server.
+<br>
+
+-Menerima Respons dari Server:
+        Setelah mengirim perintah ke server, klien menerima respons dari server menggunakan client_socket.recv(BUFFER_SIZE).
+        Data yang diterima kemudian didekode dari byte menjadi string menggunakan .decode() untuk membaca pesan respons dari server.
+        Jika respons adalah "Command not found", klien mencetak pesan kesalahan.
+        Jika respons adalah respons dari perintah yang dijalankan, klien mencetak respons tersebut.
+<br>
+
+
 
 
