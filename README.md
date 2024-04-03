@@ -250,7 +250,10 @@ SOAL
 Enter Command : ls
 ```
 
-Perintah `ls` digunakan untuk mengetahui folder dan file yang ada di direktori
+Perintah `ls` digunakan untuk mengetahui folder dan file yang ada di direktori. Output : 
+`client.py`
+
+![alt text](Assets/ls.png)
 
 
 **2. Size**
@@ -258,7 +261,9 @@ Perintah `ls` digunakan untuk mengetahui folder dan file yang ada di direktori
 Enter Command : size <nama_file>
 ```
 
-Perintah `size` digunakan untuk mengetahui ukuran file yang diinginkan dengan menambahkan parameter nama file.
+Perintah `size` digunakan untuk mengetahui ukuran file yang diinginkan dengan menambahkan parameter nama file. Output : 
+
+![alt text](Assets/size.png)
 
 
 **3. Upload**
@@ -273,21 +278,30 @@ Perintah `upload` digunakan untuk mengunggah file yang diinginkan `client` denga
 Enter Command : download <nama_file>
 ```
 
-Perintah `download` digunakan untuk mengunduh file yang diinginkan `client` dengan menambahkan nama file, misalnya `DreamAI.py`. File yang diunduh ini akan berada di `client` dan `client` akan menampilkannya.
+Perintah `download` digunakan untuk mengunduh file yang diinginkan `client` dengan menambahkan nama file, misalnya `DreamAI.py`. File yang diunduh ini akan berada di `client` dan `client` akan menampilkannya. Output : 
+
+![alt text](Assets/down.png)
+
 
 **5. Rm**
 ```
 Enter Command : rm <nama_file>
 ```
 
-Perintah `rm` digunakan untuk menghapus file yang diinginkan `client`.
+Perintah `rm` digunakan untuk menghapus file yang diinginkan `client`. Output :
+
+![alt text](Assets/rm.png)
 
 **6. Byebye**
 ```
 Enter Command : byebye
 ```
 
-Perintah `byebye` digunakan untuk memutuskan koneksi antara `client` dengan `server`. 
+Perintah `byebye` digunakan untuk memutuskan koneksi antara `client` dengan `server`. Output :
+
+![alt text](Assets/bye.png)
+
+
 <hr>
 
 
