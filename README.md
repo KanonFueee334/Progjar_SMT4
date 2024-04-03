@@ -6,7 +6,7 @@ Kelas : IF-02-01
 ```
 
 <hr>
-#Soal 
+# SOAL
 
 Buat sebuah program file transfer protocol menggunakan socket programming dengan beberapa perintah dari client seperti berikut.
 
@@ -16,9 +16,7 @@ Buat sebuah program file transfer protocol menggunakan socket programming dengan
 - `upload {nama file}` : ketika client menginputkan command tersebut, maka server akan menerima dan menyimpan file.
 - `size {nama file}` : ketika client menginputkan command tersebut, maka server akan memberikan informasi file dalam satuan MB (Mega bytes) sesuai nama file.
 - `byebye` : ketika client menginputkan command tersebut, hubungan server-client akan diputus.
-
 <br>
-<hr>
 
 ### Code Program : Server 
     import socket
