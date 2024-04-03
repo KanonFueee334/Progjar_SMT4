@@ -21,13 +21,13 @@ Buat sebuah program file transfer protocol menggunakan socket programming dengan
 <hr>
 
 ### Code Program : Server 
-import socket
-import os
-import configparser
+    import socket
+    import os
+    import configparser
 
-BUFFER_SIZE = 1024
+    BUFFER_SIZE = 1024
 
-def handle_client(client_socket):
+    def handle_client(client_socket):
     while True:
         command = client_socket.recv(BUFFER_SIZE).decode()
         
@@ -79,7 +79,7 @@ def handle_client(client_socket):
             client_socket.close()
             break
 
-def main():
+    def main():
     config = configparser.ConfigParser()
     config.read('server_config.ini')
 
@@ -99,10 +99,8 @@ def main():
 
     server_socket.close()
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
     main()
-
-```
 <br>
 
 
