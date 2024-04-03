@@ -119,18 +119,25 @@ SOAL
         byebye: Menutup koneksi dengan klien.
 <br>
 
-- Fungsi main: Ini adalah fungsi utama dari program server. Ini membaca konfigurasi server dari file server_config.ini, mengikat socket server ke alamat dan port yang ditentukan, dan mulai mendengarkan koneksi masuk. Ketika koneksi diterima, ia menerima klien baru dan menangani permintaan klien dengan memanggil fungsi handle_client.
+- Fungsi main :
+      Ini adalah fungsi utama dari program server. Ini membaca konfigurasi server dari file server_config.ini, mengikat socket server ke alamat dan port yang ditentukan, dan mulai mendengarkan koneksi masuk. Ketika koneksi diterima, ia menerima klien baru dan menangani permintaan klien dengan memanggil fungsi handle_client.
 <br>
 
-- Baca Konfigurasi Server: Konfigurasi server dibaca dari file server_config.ini menggunakan configparser. Konfigurasi mencakup host dan port yang digunakan oleh server.
+- Baca Konfigurasi Server :
+      Konfigurasi server dibaca dari file server_config.ini menggunakan configparser. Konfigurasi mencakup host dan port yang digunakan oleh server.
 <br>
 
-- Membuat Socket Server: Server membuat socket menggunakan socket.socket() dengan alamat IPv4 dan jenis socket TCP (socket.AF_INET dan socket.SOCK_STREAM). Kemudian socket 
+- Membuat Socket Server :
+  Server membuat socket menggunakan socket.socket() dengan alamat IPv4 dan jenis socket TCP (socket.AF_INET dan socket.SOCK_STREAM). Kemudian socket 
   tersebut diikat ke alamat dan port yang diberikan.
 <br>
-- Mendengarkan Koneksi Masuk: Server memulai mendengarkan koneksi masuk dengan memanggil server_socket.listen(). Ini menunggu dan menerima koneksi dari klien dengan server_socket.accept().
+
+- Mendengarkan Koneksi Masuk :
+  Server memulai mendengarkan koneksi masuk dengan memanggil server_socket.listen(). Ini menunggu dan menerima koneksi dari klien dengan server_socket.accept().
 <br>
-- Mengelola Koneksi: Ketika koneksi diterima, server memanggil handle_client untuk menangani koneksi dari klien tersebut. Setelah selesai, server kembali ke tahap mendengarkan koneksi masuk.
+
+- Mengelola Koneksi:
+  Ketika koneksi diterima, server memanggil handle_client untuk menangani koneksi dari klien tersebut. Setelah selesai, server kembali ke tahap mendengarkan koneksi masuk.
 <br>
 
 
