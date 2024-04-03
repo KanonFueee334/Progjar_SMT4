@@ -238,5 +238,10 @@ SOAL
 <br>
 
 
+### Kesimpulan : 
+
+- Fungsionalitas dasar kedua program diatas adalah untuk berkomunikasi antara klien dan server melalui protokol FTP menggunakan socket. program diatas memberikan pengguna           antarmuka sederhana untuk melakukan operasi dasar pada file di server, seperti melihat daftar file, mengunduh, mengunggah, menghapus, dan menghitung ukuran file.
+<br>
+
 
 
