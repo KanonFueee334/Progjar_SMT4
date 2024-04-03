@@ -8,6 +8,7 @@ Kelas : IF-02-01
 <hr>
 # SOAL
 
+1. Buat sebuah program file transfer protocol menggunakan socket programming dengan beberapa perintah dari client seperti berikut:
 - `ls` : ketika client menginputkan command tersebut, maka server akan menampilkan daftar folder dan file dalam folder.
 - `rm {nama file}` : ketika client menginputkan command tersebut, maka server akan menghapus file.
 - `download {nama file}` : ketika client menginputkan command tersebut, maka server akan memberikan dan menampilkan isi file.
