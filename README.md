@@ -7,12 +7,14 @@ Kelas : IF-02-01
 
 <hr>
 # SOAL
+
 - `ls` : ketika client menginputkan command tersebut, maka server akan menampilkan daftar folder dan file dalam folder.
 - `rm {nama file}` : ketika client menginputkan command tersebut, maka server akan menghapus file.
 - `download {nama file}` : ketika client menginputkan command tersebut, maka server akan memberikan dan menampilkan isi file.
 - `upload {nama file}` : ketika client menginputkan command tersebut, maka server akan menerima dan menyimpan file.
 - `size {nama file}` : ketika client menginputkan command tersebut, maka server akan memberikan informasi file dalam satuan MB (Mega bytes) sesuai nama file.
 - `byebye` : ketika client menginputkan command tersebut, hubungan server-client akan diputus.
+
 <br>
 
 ### Code Program : Server 
